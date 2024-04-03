@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>My_Money</title>
-  <link rel="stylesheet" href="/project-site-My_Money/assets/index-679cdd3b.css">
+  <script type="module" crossorigin src="/project-site-My_Money/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/project-site-My_Money/assets/vendor-2b44ac2e.js">
+  <link rel="stylesheet" href="/project-site-My_Money/assets/vendor-21fdfc57.css">
+  <link rel="stylesheet" href="/project-site-My_Money/assets/index-0c16a76a.css">
 </head>
 <body>
+  <div class="form-global">
+    <div class="form-wrapper">
   <form class="form">
       <input class="input-form" type="text" name="query" placeholder="Витрачено">
+      <button class="btn-not-visual" type="button"></button>
+      <svg class="icon-calendar" width="20px" height="20px" aria-label="icon calendar">
+        <use href="/project-site-My_Money/assets/symbol-defs-19a64c8e.svg#icon-calendar"></use>
+      </svg>
     <button class="btn-form">Додати</button>
     <div class="global-div-design">
     <div class="div-design">
@@ -31,6 +40,36 @@
     </div>
     </div>
   </form>
-  <script src="./main.js"></script>
+  </div>
+      <div class="info-statistick-btns">
+        <button class="info-btn" type="button">% - value_per week</button>
+        <button class="info-btn" type="button">info_balance</button>
+      </div>
+  </div>
+  <section class="form-history">
+      <table class="financial-table">
+        <thead>
+          <tr>
+            <th class="financial-table-value">Дата</th>
+            <th class="financial-table-value">Описание</th>
+            <th class="financial-table-value">Сумма</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01.04.2024</td>
+            <td>Покупка продуктов</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>02.04.2024</td>
+            <td>Оплата за аренду</td>
+            <td>500</td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+  <div id="calendarContainer" class="calendar-container"></div>
+  
 </body>
-</html><div></div>
+</html>
