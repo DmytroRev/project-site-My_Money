@@ -10,12 +10,14 @@
     "push": "git add . && git commit -m 'update' && git push"
   },
   "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
   },
   "author": "Dmytro Revyakin",
   "license": "ISC",
   "dependencies": {
+    "DatePicker": "^2.0.0",
+    "flatpickr": "^4.6.13",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

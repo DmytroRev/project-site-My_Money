@@ -1,19 +1,51 @@
 @import url(./reset.css);
 
+
+.form-global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1440px;
+}
 /* ----------------------Form-input---------------------- */
+.form-wrapper {
+    position: relative;
+    /* flex-basis: 50%; */
+}
+
 .form {
     padding: 28px;
 }
 
 .input-form {
+    position: relative;
     width: 272px;
     height: 40px;
     border-radius: 4px;
     padding-left: 15px;
-    padding-top: 0;padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     margin-bottom: 8px;
     margin-right: 8px;
 }
+
+.btn-not-visual {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 40px;
+        left: 290px;
+        cursor: pointer;
+        opacity: 0;
+}
+
+.icon-calendar {
+    position: absolute;
+    top: 40px;
+    left: 290px;
+}
+
 
 .btn-form {
     width: 90px;
@@ -48,5 +80,62 @@
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 4px;
+}
 
+/* -----------------statistick-info----------------- */
+
+.info-statistick-btns {
+    /* flex-basis: 40%; */
+    display: flex;
+    gap: 70px;
+    padding: 28px;
+}
+
+
+.info-btn {
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-history {
+    position: absolute;
+    top: 90px;
+    right: 125px;
+    /* flex-basis: 100%;
+    margin-top: 20px; */
+}
+
+/* .form-history {
+    border: 1px solid #808080;
+    max-width: 600px;
+}
+
+.financial-table-value {
+    border: 1px solid #808080;
+} */
+
+.financial-table {
+    width: 700px;
+border-collapse: collapse;
+}
+
+.financial-table th,
+.financial-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.financial-table th {
+    background-color: #f2f2f2;
+}
+
+/* .flatpickr-calendar {
+    display: flex;
+} */
+.calendar-container {
+    display: block;
+    /* или inline-block, в зависимости от вашего предпочтения */
 }

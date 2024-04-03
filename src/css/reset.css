@@ -29,3 +29,7 @@ body {
     color: #2E2F42;
     background-color: transparent;
 }
+
+.visible {
+    display: none;
+}
